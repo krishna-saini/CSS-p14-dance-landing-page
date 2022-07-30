@@ -1,0 +1,252 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+*::after,
+*::before {
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Merriweather", sans-serif;
+  line-height: 1;
+  font-weight: 400;
+}
+
+main {
+  display: flex;
+}
+/**************************/
+/* GENRAL REUSABLE COMPONENTS */
+/**************************/
+.container {
+  padding: 0 4.4rem;
+  margin: 0 auto;
+}
+
+.left-container {
+  position: relative;
+}
+
+.left-container {
+  height: 100vh;
+}
+
+.logo {
+  position: absolute;
+  padding: 4rem;
+}
+
+.left-image {
+  height: 100vh;
+  display: block;
+}
+
+.right-container {
+  background-color: #f5f2f0;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 7rem;
+}
+.list {
+  list-style: none;
+  display: flex;
+  gap: 6rem;
+}
+
+.list-item,
+.list-item:link,
+.list-item:visited {
+  font-size: 1.4rem;
+  text-decoration: none;
+  color: #555;
+}
+.list-item:hover,
+.list-item:active {
+  color: #000;
+}
+
+.header-line::after {
+  content: "";
+  border: 2px solid #333333;
+  display: inline-block;
+  width: 250px;
+}
+
+.hero {
+  display: grid;
+  grid-template-columns: 2.5fr 1fr 1fr;
+}
+
+.big-heading1,
+.big-heading2 {
+  font-size: 9.2rem;
+}
+
+.big-heading1 {
+  color: #f5f2f0;
+  text-shadow: 0 0 3px #333333;
+}
+
+.big-heading2 {
+  text-indent: 30%;
+  color: #333333;
+}
+
+.subheading {
+  font-size: 3rem;
+  font-weight: 100;
+  align-self: flex-end;
+  color: #555;
+  line-height: 1.2;
+}
+
+.social-links {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4rem;
+  justify-self: end;
+}
+
+.link svg {
+  height: 15px;
+}
+
+.cta-container {
+  padding: 2.4rem 4.4rem 1.6rem 4.4rem;
+  text-align: end;
+}
+.btn,
+.btn:link,
+.btn:visited {
+  background-color: #333333;
+  color: #fff;
+  font-size: 1.6rem;
+  text-decoration: none;
+  padding: 1.5rem 4rem;
+  display: inline-block;
+  cursor: pointer;
+  font-family: inherit;
+  transition: all 0.3s;
+}
+
+.btn:hover,
+.btn:active {
+  background-color: #fff;
+  border: 0.5px solid #333333;
+  color: #333333;
+}
+
+.bottom {
+  display: grid;
+  grid-template-columns: 2fr 3fr 0.5fr;
+}
+
+.bottom-left {
+}
+.services {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.services > li {
+  font-size: 1.4rem;
+  color: #555;
+  transition: all 0.1s;
+}
+
+/* Vertical line with dots in ends and between */
+.services > li {
+  position: relative;
+}
+.services > li::before {
+  content: "\25CF";
+  color: #555;
+  margin-right: 20px;
+  font-size: 20px;
+  transition: all 0.1s;
+}
+.services > li:not(:last-child)::after {
+  position: absolute;
+  left: 0;
+  top: 7px;
+  content: "";
+  border-left: 2px solid #555;
+  margin-left: 5px;
+  height: 350%;
+}
+
+.services > li:hover {
+  color: #333333;
+  cursor: pointer;
+  font-weight: 700;
+}
+
+.services > li:hover::before {
+  color: #000;
+}
+
+.bottom-right {
+}
+
+.quote {
+  font-weight: 800;
+  font-size: 4rem;
+}
+
+.description {
+  font-size: 1.4rem;
+  color: #333333;
+  line-height: 1.4;
+  padding-bottom: 1.4rem;
+}
+
+.img-box {
+  height: 13.3rem;
+  overflow: hidden;
+  position: relative;
+}
+.img-box img {
+  display: block;
+  width: 100%;
+  height: auto;
+  position: absolute;
+  top: -7rem;
+}
+
+.arrow {
+  justify-self: center;
+  align-self: center;
+  position: relative;
+}
+
+.arrow::after {
+  content: "";
+  border: 2px solid #333;
+  display: inline-block;
+  height: 150px;
+  transform: rotate(179deg);
+}
+
+.arrow::before {
+  content: ">";
+  color: #333;
+  position: absolute;
+  transform: rotate(90deg);
+  font-size: 4rem;
+  bottom: -12px;
+  right: -15px;
+}
