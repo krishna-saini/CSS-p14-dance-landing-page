@@ -1,0 +1,69 @@
+/* VIEW BELOW 544px (Phones) */
+/* 16px * 34 = 544px  */
+/**************************/
+
+@media (max-width: 34em) {
+    .hero-section{
+        grid-template-columns: 1fr ;
+    }
+    .left-container {
+        
+      }
+      .logo{
+        position:absolute;
+        top:3%;
+        right:10%;
+      }
+    .left-image{
+       width: 100vw;
+       height:100vh;
+        object-fit: cover;
+        object-position: left;
+    }
+    .right-container {
+        /* width: 100vw; */
+        padding:0 1rem;
+        position: relative;
+    }
+
+    .header{
+        /* width: 100vw; */
+        margin-bottom: 4rem;;
+    }
+    .header-line{
+        position:absolute;
+        top:5%;
+    }
+    .list{
+        gap:2rem;
+    }
+
+    .hero {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 3fr 1fr;
+        row-gap: 2rem;
+      }
+    .big-heading{
+        /* margin-top: -70px; */
+    }
+      .subheading{
+        text-align: center;
+        align-self: flex-start;
+      }
+      .social-links{
+        grid-row: 1;
+        flex-direction: row;
+        align-self: flex-start;
+        justify-self: center;
+        flex-basis:20%;
+      }
+      .bottom {
+        padding-top: 4rem;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(3,1fr);
+
+      }
+      .arrow::after, .arrow::before{
+        display: none;
+      }
+}
