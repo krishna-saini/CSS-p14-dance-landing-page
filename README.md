@@ -26,7 +26,7 @@ Users should be able to:
 
 ### Screenshot
 
-![](./img/14.png)
+![](./14.png)
 
 ### Links
 -  [Solution URL](https://github.com/krishna-saini/P14--Dance-Landing-Page)
