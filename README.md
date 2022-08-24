@@ -1,4 +1,4 @@
-# Headphone Prdouct Home Page
+# Dance Landing Page
 This is a solution to the challenge no. 14 given in Full Stack Web development bootcamp by [Hitest Chowdhary](https://www.linkedin.com/in/hiteshchoudhary/?originalSubdomain=in)
 
 ## Table of contents
